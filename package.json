@@ -4,7 +4,10 @@
   "description": "Learning",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "live-server",
+    "dev": "npm run compile & npm run start",
+    "compile":"tsc -w ./introducao/src/basico.ts"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,7 @@
   },
   "homepage": "https://github.com/jaovw/TypeScript#readme",
   "dependencies": {
+    "live-server": "^1.2.2",
     "typescript": "^4.7.4"
   }
 }
