@@ -39,3 +39,23 @@ const minhaCor:cores =cores.vermelho
 
 console.log(minhaCor)
 console.log(cores.amarelo, cores.roxo)
+
+// FUNCOES
+
+function dizNome(): string {
+    return nome // PRECISA RETORNAR SEMELHANTE AO TIPO SETADO
+}
+
+function falaOi(): void { // VAZIO
+    console.log('Oi')
+    // return nome 
+}
+
+console.log(dizNome())
+falaOi()
+
+function multiplica(numA: number, numB: number): number {
+    return numA * numB
+}
+
+console.log(multiplica(2,4.8))

@@ -30,3 +30,17 @@ var cores;
 var minhaCor = cores.vermelho;
 console.log(minhaCor);
 console.log(cores.amarelo, cores.roxo);
+// FUNCOES
+function dizNome() {
+    return nome; // PRECISA RETORNAR SEMELHANTE AO TIPO SETADO
+}
+function falaOi() {
+    console.log('Oi');
+    // return nome 
+}
+console.log(dizNome());
+falaOi();
+function multiplica(numA, numB) {
+    return numA * numB;
+}
+console.log(multiplica(2, 4.8));
