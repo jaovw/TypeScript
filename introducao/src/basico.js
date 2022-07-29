@@ -44,3 +44,7 @@ function multiplica(numA, numB) {
     return numA * numB;
 }
 console.log(multiplica(2, 4.8));
+// TIPO FUNCAO
+var calculo;
+calculo = multiplica;
+console.log(calculo(3, 5));

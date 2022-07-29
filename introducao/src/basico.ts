@@ -59,3 +59,10 @@ function multiplica(numA: number, numB: number): number {
 }
 
 console.log(multiplica(2,4.8))
+
+
+// TIPO FUNCAO
+
+let calculo: (a: number, b: number) => number
+calculo = multiplica
+console.log(calculo(3,5))
