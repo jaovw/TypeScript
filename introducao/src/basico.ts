@@ -15,5 +15,9 @@ console.log(nome)
 const estaLigado: boolean = false
 console.log(estaLigado)
 
+// ARRAY
+const arr: any[] = ['Pessoa','Trabalho', 100]
+console.log(arr)
+
 // CASO DECLARE A VARIAVEL SEM ATRIBUIR NADA EXPLICITAMENTE
 // ASSUME O TIPO __ ANY

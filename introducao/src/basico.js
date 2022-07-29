@@ -10,5 +10,8 @@ console.log(nome);
 // BOOLEAN
 var estaLigado = false;
 console.log(estaLigado);
+// ARRAY
+var arr = ['Pessoa', 'Trabalho', 100];
+console.log(arr);
 // CASO DECLARE A VARIAVEL SEM ATRIBUIR NADA EXPLICITAMENTE
 // ASSUME O TIPO __ ANY
