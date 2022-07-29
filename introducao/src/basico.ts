@@ -25,3 +25,17 @@ console.log(arr)
 // TUPLAS
 const tup: [string, number] = ['Rua principal', 1239] // TENDO QUE DEFINIR TODOS OS TIPOS DOS ELEMENTOS, QUANTIDADE IMPORTA
 console.log(tup)
+
+// ENUM
+enum cores {
+    amarelo,
+    cinza,
+    verde,
+    vermelho =10,
+    roxo
+}
+
+const minhaCor:cores =cores.vermelho
+
+console.log(minhaCor)
+console.log(cores.amarelo, cores.roxo)

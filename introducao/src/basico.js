@@ -18,3 +18,15 @@ console.log(arr);
 // TUPLAS
 var tup = ['Rua principal', 1239]; // TENDO QUE DEFINIR TODOS OS TIPOS DOS ELEMENTOS, QUANTIDADE IMPORTA
 console.log(tup);
+// ENUM
+var cores;
+(function (cores) {
+    cores[cores["amarelo"] = 0] = "amarelo";
+    cores[cores["cinza"] = 1] = "cinza";
+    cores[cores["verde"] = 2] = "verde";
+    cores[cores["vermelho"] = 10] = "vermelho";
+    cores[cores["roxo"] = 11] = "roxo";
+})(cores || (cores = {}));
+var minhaCor = cores.vermelho;
+console.log(minhaCor);
+console.log(cores.amarelo, cores.roxo);
