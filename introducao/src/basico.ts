@@ -89,3 +89,12 @@ let funcionario: Funcionario = {
 console.log(funcionario.supervisores)
 console.log(funcionario.baterPonto(8))
 console.log(funcionario.baterPonto(9))
+
+// UNION TYPES 
+let nota: number | string // DANDO LIBERDADE NA HORA DA CHECAGEM DO TIPO
+
+nota = 10
+console.log(`Minha nota e ${nota}`)
+
+nota = '9'
+console.log(`Minha nota e ${nota}`)
