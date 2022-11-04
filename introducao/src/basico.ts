@@ -69,10 +69,13 @@ console.log(calculo(3,5))
 
 // OBJ
 
-let funcionario: {
-    supervisores:  string[],
+// ALIAS - DANDO POSSIBILIDADE DE REPICAR PARA OS DEMAIS TIPOS
+type Funcionario = {
+    supervisores: string[],
     baterPonto: (horas: number) => string
-} = {
+}
+
+let funcionario: Funcionario = {
     supervisores: ['Ana', 'Joao'],
     baterPonto(horario: number): string {
         if(horario <= 8) {

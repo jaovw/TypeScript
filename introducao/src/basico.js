@@ -48,7 +48,6 @@ console.log(multiplica(2, 4.8));
 var calculo;
 calculo = multiplica;
 console.log(calculo(3, 5));
-// OBJ
 var funcionario = {
     supervisores: ['Ana', 'Joao'],
     baterPonto: function (horario) {
