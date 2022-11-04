@@ -98,3 +98,24 @@ console.log(`Minha nota e ${nota}`)
 
 nota = '9'
 console.log(`Minha nota e ${nota}`)
+
+// NEVER - PARA UMA FUNCAO QUE NAO TERMINA CORRETAMENTE, NESSE CASO UMA FUNCAO ESPECIFICA PARA ERROS
+
+function falha(msg: string): never {
+    throw new Error(msg)
+}
+
+const produto = {
+    nome: 'Sabao',
+    preco: -1,
+    validaProduto() {
+        if(this.nome.trim().length == 0) {
+            falha('Precisa de um nome')
+        }
+        if(this.preco <= 0) {
+            falha('Preco invalido')
+        }
+    }
+}
+
+produto.validaProduto()

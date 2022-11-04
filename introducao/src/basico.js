@@ -68,3 +68,20 @@ nota = 10;
 console.log("Minha nota e ".concat(nota));
 nota = '9';
 console.log("Minha nota e ".concat(nota));
+// NEVER - PARA UMA FUNCAO QUE NAO TERMINA CORRETAMENTE, NESSE CASO UMA FUNCAO ESPECIFICA PARA ERROS
+function falha(msg) {
+    throw new Error(msg);
+}
+var produto = {
+    nome: 'Sabao',
+    preco: -1,
+    validaProduto: function () {
+        if (this.nome.trim().length == 0) {
+            falha('Precisa de um nome');
+        }
+        if (this.preco <= 0) {
+            falha('Preco invalido');
+        }
+    }
+};
+produto.validaProduto();
