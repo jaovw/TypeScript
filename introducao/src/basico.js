@@ -48,3 +48,18 @@ console.log(multiplica(2, 4.8));
 var calculo;
 calculo = multiplica;
 console.log(calculo(3, 5));
+// OBJ
+var funcionario = {
+    supervisores: ['Ana', 'Joao'],
+    baterPonto: function (horario) {
+        if (horario <= 8) {
+            return 'Ponto normal';
+        }
+        else {
+            return 'Fora do horario';
+        }
+    }
+};
+console.log(funcionario.supervisores);
+console.log(funcionario.baterPonto(8));
+console.log(funcionario.baterPonto(9));

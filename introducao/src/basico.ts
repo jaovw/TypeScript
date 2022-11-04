@@ -66,3 +66,23 @@ console.log(multiplica(2,4.8))
 let calculo: (a: number, b: number) => number
 calculo = multiplica
 console.log(calculo(3,5))
+
+// OBJ
+
+let funcionario: {
+    supervisores:  string[],
+    baterPonto: (horas: number) => string
+} = {
+    supervisores: ['Ana', 'Joao'],
+    baterPonto(horario: number): string {
+        if(horario <= 8) {
+            return 'Ponto normal'
+        } else {
+            return 'Fora do horario'
+        }
+    }
+}
+
+console.log(funcionario.supervisores)
+console.log(funcionario.baterPonto(8))
+console.log(funcionario.baterPonto(9))
